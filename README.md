@@ -3,12 +3,9 @@
 * [Atualizando o projeto](#atualizando-o-projeto)
 * [Selecionando a versão do java para o projeto](#selecionando-a-versão-do-java-para-o-projeto)
 * [Build o projeto](#build-o-projeto)
+* [License](#license)
 * [Credits](#credits)
 * [Self-Promotion](#self-promotion)
-* [License](#license)
-* [License](#license-1)
-* [Credits](#credits-1)
-* [Self-Promotion](#self-promotion-1)
 
 
 ## Listando os targets
@@ -177,21 +174,3 @@
   Total time: 17 seconds
 ~~~
 
-## Credits
-All the credit goes to the following projects
-* [https://github.com/roxma/nvim-complete-manager](https://github.com/roxma/nvim-complete-manager)
-* [https://github.com/maralla/completor.vim](https://github.com/maralla/completor.vim)
-
-## Self-Promotion
-
-Like android-execute-native-applicationcommentary? Follow the repository on
-[GitHub](https://github.com/lopesivan/android-execute-native-applicationcommentary)
-and vote for it on you're feeling especially charitable, follow
-[iczar](https://keybase.io/iczar) on
-[blog](http://42algoritmos.com.br/blog/iczar) and
-[GitHub](https://github.com/lopesivan).
-
-## License
-
-Copyright (c) ICzar.  Distributed under the same terms as GPLv3.
-See [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
