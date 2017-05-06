@@ -1,5 +1,5 @@
 MARKDOWN=\
-STEPS.md         \
+log-book.md      \
 doc/license.md   \
 doc/credits.md   \
 doc/self-promotion.md
@@ -14,7 +14,7 @@ README.md:
 	@cat $(MARKDOWN)| ./gh-md-toc - | sed 's/^ \+//' > $@
 	@echo ''                 >> $@
 	@echo ''                 >> $@
-	@sed '1,2d' ETAPAS.md    >> $@
+	@sed '1,2d' log-book.md  >> $@
 
 clean-README:
 	rm README.md
