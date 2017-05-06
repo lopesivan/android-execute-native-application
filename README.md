@@ -27,7 +27,7 @@
 ## Atualizando o projeto
 
 ~~~ sh
-  $ android update project --target android-15 -p .
+  $ android update project --name Exemplo --target android-15 -p .
 
   Updated and renamed default.properties to project.properties
   Updated local.properties
