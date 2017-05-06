@@ -3,8 +3,8 @@
 * [Atualizando o projeto](#atualizando-o-projeto)
 * [Selecionando a versão do java para o projeto](#selecionando-a-versão-do-java-para-o-projeto)
 * [Build o projeto](#build-o-projeto)
-* [License](#license)
 * [Credits](#credits)
+* [License](#license)
 * [Self-Promotion](#self-promotion)
 
 
@@ -174,3 +174,22 @@
   Total time: 17 seconds
 ~~~
 
+
+## Credits
+All the credit goes to the following projects
+* [android-native-exe-demo](https://github.com/gimite/android-native-exe-demo)
+* [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc)
+
+## Self-Promotion
+
+Like android-execute-native-applicationcommentary? Follow the repository on
+[GitHub](https://github.com/lopesivan/android-execute-native-applicationcommentary)
+and vote for it on you're feeling especially charitable, follow
+[iczar](https://keybase.io/iczar) on
+[blog](http://42algoritmos.com.br/blog/iczar) and
+[GitHub](https://github.com/lopesivan).
+
+## License
+
+Copyright (c) ICzar.  Distributed under the same terms as GPLv3.
+See [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
