@@ -6,7 +6,7 @@ update:
 jenv:
 	jenv local oracle64-1.8.0.131
 
-README.md:
+README.md: $(MARKDOWN)
 	@cat $(MARKDOWN) | ./gh-md-toc - | sed 's/^ \+//' > $@
 	@echo ''                   >> $@
 	@echo ''                   >> $@
