@@ -1,12 +1,10 @@
-# android-execute-native-application
-
-Android execute native application
-
 * [Etapas de desenvolvimento](#etapas-de-desenvolvimento)
 * [Listando os targets](#listando-os-targets)
 * [Atualizando o projeto](#atualizando-o-projeto)
 * [Selecionando a versão do java para o projeto](#selecionando-a-versão-do-java-para-o-projeto)
 * [Build o projeto](#build-o-projeto)
+* [Self-Promotion](#self-promotion)
+* [License](#license)
 
 
 ## Listando os targets
@@ -174,3 +172,15 @@ Android execute native application
   BUILD SUCCESSFUL
   Total time: 17 seconds
 ~~~
+
+## Self-Promotion
+
+Like android-execute-native-applicationcommentary? Follow the repository on
+[GitHub](https://github.com/lopesivan/android-execute-native-applicationcommentary) and vote for it on
+you're feeling especially charitable, follow [iczar](http://42algoritmos.com.br/blog/iczar) on and
+[GitHub](https://github.com/lopesivan).
+
+## License
+
+Copyright (c) ICzar.  Distributed under the same terms as GPLv3.
+See [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
