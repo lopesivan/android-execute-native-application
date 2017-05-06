@@ -21,11 +21,18 @@ DNAME_CLIENT = 'CN=$(CLIENTNAME),OU=baeldung.com,O=Baeldung,L=SomeCity,ST=SomeSt
 TRUSTSTORE   = truststore.jks
 
 all:           pre-build
-clean:         clean-key clean-ant clean-README
 key:           create-keystore add-host create-truststore add-client
-pre-build:     update jenv README.md
+pre-build:     update jenv
 build:         debug
 build-release: create-keystore relesase
+
+README:
+	@make -C doc
+	@test -e README.md && rm README.md
+	@ln -s doc/README.md
+
+clean:         clean-key clean-ant
+	@make -C doc clean
 
 include etc/main.mk
 include etc/ant.mk

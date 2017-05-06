@@ -1,0 +1,194 @@
+* [Etapas de desenvolvimento](#etapas-de-desenvolvimento)
+* [Listando os targets](#listando-os-targets)
+* [Atualizando o projeto](#atualizando-o-projeto)
+* [Selecionando a versão do java para o projeto](#selecionando-a-versão-do-java-para-o-projeto)
+* [Build o projeto](#build-o-projeto)
+* [Credits](#credits)
+* [License](#license)
+* [Self-Promotion](#self-promotion)
+
+## Listando os targets
+
+~~~ sh
+  $ android list targets
+
+  ----------
+  id: 3 or "android-15"
+       Name: Android 4.0.3
+       Type: Platform
+       API level: 15
+       Revision: 5
+       Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800
+   Tag/ABIs : no ABIs.
+  ----------
+~~~
+
+## Atualizando o projeto
+
+~~~ sh
+  $ android update project --name Exemplo --target android-15 -p .
+
+  Updated and renamed default.properties to project.properties
+  Updated local.properties
+  No project name specified, using Activity name 'MainActivity'.
+  If you wish to change it, edit the first line of build.xml.
+  Added file ./build.xml
+  Added file ./proguard-project.txt
+~~~
+
+## Selecionando a versão do java para o projeto
+
+~~~ sh
+  $ jenv versions
+    system
+    1.6
+    1.6.0.35
+    1.7
+    1.7.0.79
+    1.8
+    1.8.0.131
+    9-ea
+    openjdk64-1.6.0.35
+    openjdk64-1.7.0.79
+  * oracle64-1.8.0.131 (set by /home/ivan/.jenv/version)
+~~~
+
+~~~ sh
+  $ jenv local oracle64-1.8.0.131
+~~~
+## Build o projeto
+
+~~~ sh
+  $ ant debug
+  Buildfile: /home/ivan/workspace/android/android-native-exe-demo/build.xml
+
+  -set-mode-check:
+
+  -set-debug-files:
+
+  -check-env:
+   [checkenv] Android SDK Tools Revision 24.4.1
+   [checkenv] Installed at /opt/android-sdk-linux
+
+  -setup:
+       [echo] Project Name: MainActivity
+    [gettype] Project Type: Application
+
+  -set-debug-mode:
+
+  -debug-obfuscation-check:
+
+  -pre-build:
+
+  -build-setup:
+  [getbuildtools] Using latest Build Tools: 23.0.1
+       [echo] Resolving Build Target for MainActivity...
+  [gettarget] Project Target:   Android 4.0.3
+  [gettarget] API level:        15
+  [gettarget] WARNING: No minSdkVersion value set. Application will install on all Android versions.
+       [echo] ----------
+       [echo] Creating output directories if needed...
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/libs
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/bin
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/bin/res
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/bin/rsObj
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/bin/rsLibs
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/gen
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/bin/classes
+      [mkdir] Created dir: /home/ivan/workspace/android/android-native-exe-demo/bin/dexedLibs
+       [echo] ----------
+       [echo] Resolving Dependencies for MainActivity...
+  [dependency] Library dependencies:
+  [dependency] No Libraries
+  [dependency]
+  [dependency] ------------------
+  [dependency] API<=15: Adding annotations.jar to the classpath.
+       [echo] ----------
+       [echo] Building Libraries with 'debug'...
+     [subant] No sub-builds to iterate on
+
+  -code-gen:
+  [mergemanifest] Merging AndroidManifest files into one.
+  [mergemanifest] Manifest merger disabled. Using project manifest only.
+       [echo] Handling aidl files...
+       [aidl] No AIDL files to compile.
+       [echo] ----------
+       [echo] Handling RenderScript files...
+       [echo] ----------
+       [echo] Handling Resources...
+       [aapt] Generating resource IDs...
+       [echo] ----------
+       [echo] Handling BuildConfig class...
+  [buildconfig] Generating BuildConfig class.
+
+  -pre-compile:
+
+  -compile:
+      [javac] Compiling 3 source files to /home/ivan/workspace/android/android-native-exe-demo/bin/classes
+      [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+      [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+      [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+      [javac] 3 warnings
+
+  -post-compile:
+
+  -obfuscate:
+
+  -dex:
+        [dex] input: /home/ivan/workspace/android/android-native-exe-demo/bin/classes
+        [dex] input: /opt/android-sdk-linux/tools/support/annotations.jar
+        [dex] Pre-Dexing /opt/android-sdk-linux/tools/support/annotations.jar -> annotations-57bcb942842df78922f5cd056349eee7.jar
+        [dex] Converting compiled files and external libraries into /home/ivan/workspace/android/android-native-exe-demo/bin/classes.dex...
+         [dx] Merged dex A (12 defs/7.4KiB) with dex B (2 defs/1.1KiB). Result is 14 defs/9.2KiB. Took 0.3s
+
+  -crunch:
+     [crunch] Crunching PNG Files in source dir: /home/ivan/workspace/android/android-native-exe-demo/res
+     [crunch] To destination dir: /home/ivan/workspace/android/android-native-exe-demo/bin/res
+     [crunch] Processing image to cache: /home/ivan/workspace/android/android-native-exe-demo/res/drawable/icon.png => /home/ivan/workspace/android/android-native-exe-demo/bin/res/drawable/icon.png
+     [crunch]   (processed image to cache entry /home/ivan/workspace/android/android-native-exe-demo/bin/res/drawable/icon.png: 0% size of source)
+     [crunch] Crunched 1 PNG files to update cache
+
+  -package-resources:
+       [aapt] Creating full resource package...
+
+  -package:
+  [apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+  [apkbuilder] Creating MainActivity-debug-unaligned.apk and signing it with a debug key...
+
+  -post-package:
+
+  -do-debug:
+   [zipalign] Running zip align on final apk...
+       [echo] Debug Package: /home/ivan/workspace/android/android-native-exe-demo/bin/MainActivity-debug.apk
+  [propertyfile] Creating new property file: /home/ivan/workspace/android/android-native-exe-demo/bin/build.prop
+  [propertyfile] Updating property file: /home/ivan/workspace/android/android-native-exe-demo/bin/build.prop
+  [propertyfile] Updating property file: /home/ivan/workspace/android/android-native-exe-demo/bin/build.prop
+  [propertyfile] Updating property file: /home/ivan/workspace/android/android-native-exe-demo/bin/build.prop
+
+  -post-build:
+
+  debug:
+
+  BUILD SUCCESSFUL
+  Total time: 17 seconds
+~~~
+
+
+## Credits
+All the credit goes to the following projects
+* [android-native-exe-demo](https://github.com/gimite/android-native-exe-demo)
+* [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc)
+
+## License
+
+Copyright (c) ICzar.  Distributed under the same terms as
+[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+## Self-Promotion
+
+Like android-execute-native-applicationcommentary? Follow the repository on
+[GitHub](https://github.com/lopesivan/android-execute-native-applicationcommentary)
+and vote for it on you're feeling especially charitable, follow
+[iczar](https://keybase.io/iczar) on
+[blog](http://42algoritmos.com.br/blog/iczar) and
+[GitHub](https://github.com/lopesivan).
