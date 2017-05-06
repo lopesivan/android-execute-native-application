@@ -1,4 +1,4 @@
-MARKDOWN= log-book.md doc/license.md doc/credits.md doc/self-promotion.md
+MARKDOWN = log-book.md doc/credits.md doc/license.md doc/self-promotion.md
 
 update:
 	android update project --name $(NAME) --target $(TARGET) -p .
@@ -6,12 +6,17 @@ update:
 jenv:
 	jenv local oracle64-1.8.0.131
 
-#	tee | ./gh-md-toc - | sed 's/^ \+//' > $@
 README.md:
-	@cat $(MARKDOWN)
-#	@echo ''                 >> $@
-#	@echo ''                 >> $@
-#	@sed '1,2d' log-book.md  >> $@
+	@cat $(MARKDOWN) | ./gh-md-toc - | sed 's/^ \+//' > $@
+	@echo ''                   >> $@
+	@echo ''                   >> $@
+	@sed '1,2d' log-book.md    >> $@
+	@echo ''                   >> $@
+	@cat doc/credits.md        >> $@
+	@echo ''                   >> $@
+	@cat doc/self-promotion.md >> $@
+	@echo ''                   >> $@
+	@cat doc/license.md        >> $@
 
 clean-README:
 	rm README.md
