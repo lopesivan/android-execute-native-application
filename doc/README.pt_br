@@ -3,9 +3,9 @@
 * [Atualizando o projeto](#atualizando-o-projeto)
 * [Selecionando a versão do java para o projeto](#selecionando-a-versão-do-java-para-o-projeto)
 * [Build o projeto](#build-o-projeto)
-* [Credits](#credits)
-* [License](#license)
-* [Self-Promotion](#self-promotion)
+* [Creditos](#creditos)
+* [Licença](#licença)
+* [Propaganda](#propaganda)
 
 
 ## Listando os targets
@@ -175,21 +175,22 @@
 ~~~
 
 
-## Credits
-All the credit goes to the following projects
+## Creditos
+
+Todos os créditos e e inspirações pertencem aos seguintes projetos:
 * [android-native-exe-demo](https://github.com/gimite/android-native-exe-demo)
 * [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc)
 
-## License
+## Licença
 
-Copyright (c) ICzar.  Distributed under the same terms as
+Copyright (c) ICzar.  Distribuido dentro dos mesmos termos da licença
 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-## Self-Promotion
+## Propaganda
 
-Like android-execute-native-applicationcommentary? Follow the repository on
+Gostou do projeto android-execute-native-applicationcommentary? Então siga o repositório no
 [GitHub](https://github.com/lopesivan/android-execute-native-applicationcommentary)
-and vote for it on you're feeling especially charitable, follow
-[iczar](https://keybase.io/iczar) on
-[blog](http://42algoritmos.com.br/blog/iczar) and
-[GitHub](https://github.com/lopesivan).
+e vote nele, mas se você estiver se sentindo animado, siga o
+[blog](http://42algoritmos.com.br/blog/iczar) do programador
+[iczar](https://keybase.io/iczar) ou acompanhe no
+[GitHub](https://github.com/lopesivan) seus projetos.
