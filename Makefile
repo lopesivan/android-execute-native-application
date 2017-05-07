@@ -26,14 +26,13 @@ pre-build:     update jenv
 build:         debug
 build-release: create-keystore relesase
 
-README:
-	@make -C doc
-	@test -e README.md && rm README.md
-	@ln -s doc/README.md
-
-clean:         clean-key clean-ant
-	@make -C doc clean
+pt_br:
+	@ln -s doc/README.pt_br README.md
+en:
+	@ln -s doc/README.en README.md
 
 include etc/main.mk
 include etc/ant.mk
 include etc/key.mk
+
+clean: clean-key clean-ant
