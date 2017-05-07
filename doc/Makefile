@@ -1,4 +1,4 @@
-MARKDOWN = credits,license,self-promotion
+MARKDOWN = credits,self-promotion,license
 PT_BR    = $(shell bash -c 'echo {$(MARKDOWN)}.pt_br.md')
 EN       = $(shell bash -c 'echo {$(MARKDOWN)}.en.md')
 
