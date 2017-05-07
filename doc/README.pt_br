@@ -4,8 +4,8 @@
 * [Selecionando a versão do java para o projeto](#selecionando-a-versão-do-java-para-o-projeto)
 * [Build o projeto](#build-o-projeto)
 * [Creditos](#creditos)
-* [Licença](#licença)
 * [Propaganda](#propaganda)
+* [Licença](#licença)
 
 
 ## Listando os targets
@@ -181,11 +181,6 @@ Todos os créditos e e inspirações pertencem aos seguintes projetos:
 * [android-native-exe-demo](https://github.com/gimite/android-native-exe-demo)
 * [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc)
 
-## Licença
-
-Copyright (c) ICzar.  Distribuido dentro dos mesmos termos da licença
-[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
 ## Propaganda
 
 Gostou do projeto *android-execute-native-applicationcommentary*? Então siga o repositório no
@@ -194,3 +189,8 @@ e vote nele, mas se você estiver se sentindo animado, siga o
 [blog](http://42algoritmos.com.br/blog/iczar) do programador
 [iczar](https://keybase.io/iczar) ou acompanhe no
 [GitHub](https://github.com/lopesivan) seus projetos.
+
+## Licença
+
+Copyright (c) ICzar.  Distribuido dentro dos mesmos termos da licença
+[GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
