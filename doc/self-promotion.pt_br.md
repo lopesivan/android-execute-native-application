@@ -1,8 +1,8 @@
-## Self-Promotion
+## Propaganda
 
-Like android-execute-native-applicationcommentary? Follow the repository on
+Gostou do projeto android-execute-native-applicationcommentary? Então siga o repositório no
 [GitHub](https://github.com/lopesivan/android-execute-native-applicationcommentary)
-and vote for it on you're feeling especially charitable, follow
-[iczar](https://keybase.io/iczar) on
-[blog](http://42algoritmos.com.br/blog/iczar) and
-[GitHub](https://github.com/lopesivan).
+e vote nele, mas se você estiver se sentindo animado, siga o
+[blog](http://42algoritmos.com.br/blog/iczar) do programador
+[iczar](https://keybase.io/iczar) ou acompanhe no
+[GitHub](https://github.com/lopesivan) seus projetos.
