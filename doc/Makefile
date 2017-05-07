@@ -2,11 +2,7 @@ MARKDOWN = credits,license,self-promotion
 PT_BR    = $(shell bash -c 'echo {$(MARKDOWN)}.pt_br.md')
 EN       = $(shell bash -c 'echo {$(MARKDOWN)}.en.md')
 
-all: README.md
-
-README.md: README.pt_br README.en
-	# $@ in english
-	cp README.en README.md
+all: README.pt_br README.en
 
 README.pt_br: $(PT_BR)
 	# doc: Portugês do Brasil
@@ -31,4 +27,4 @@ README.en: $(EN)
 	@for m in $(EN); do echo >> $@;cat $$m >> $@ ; done
 
 clean:
-	rm README.md README.pt_br README.en
+	rm README.pt_br README.en
